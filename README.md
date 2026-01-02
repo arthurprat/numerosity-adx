@@ -34,7 +34,7 @@ git clone https://github.com/arthurprat/numerosity-adx.git
 Go to the experiment repo:
 
 ```
-cd experiment
+cd numerosity-adx/experiment
 ```
 
 Run the experiment for subject 01, session 1, with the narrow range, outside the scanner:
