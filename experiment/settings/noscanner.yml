@@ -45,7 +45,7 @@ various:
   text_color: [1, 1, 1]
 
 examples:
-  n_examples: 2 #15
+  n_examples: 5 #15
 
 feedback:
   n_examples: 3 #30 # 30

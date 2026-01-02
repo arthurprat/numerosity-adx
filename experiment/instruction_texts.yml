@@ -3,7 +3,7 @@ intro_block:
 
 intro_part1: 
   "Part 1.\n\n
-  You will see {nb_examples} examples of clouds of dots,\n
+  You will see {n_examples} examples of clouds of dots,\n
   together with the number of dots that they contain."
 
 intro_part2:

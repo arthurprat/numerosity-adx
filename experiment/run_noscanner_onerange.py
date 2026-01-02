@@ -21,11 +21,11 @@ class OneRangeSession(EstimationSession):
 
         ###### EXAMPLES ######
         instruction_trial2 = InstructionTrial(self, 0, self.instructions['intro_block'].format(range_low=self.settings['range'][0], range_high=self.settings['range'][1]))
-        instruction_trial3 = InstructionTrial(self, 0, self.instructions['intro_part1'])
+        n_examples = self.settings['examples'].get('n_examples')
+        instruction_trial3 = InstructionTrial(self, 0, self.instructions['intro_part1'].format(n_examples=n_examples))
 
         self.trials += [instruction_trial2, instruction_trial3]
 
-        n_examples = self.settings['examples'].get('n_examples')
         ns = np.random.randint(self.settings['range'][0], self.settings['range'][1] + 1, n_examples)
 
         ns[0] = self.settings['range'][0]
