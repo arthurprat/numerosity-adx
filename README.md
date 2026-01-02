@@ -37,9 +37,11 @@ Go to the experiment repo:
 cd experiment
 ```
 
-Run the experiment for subject 01, session 1, with the narrow range, outisde the scanner:
+Run the experiment for subject 01, session 1, with the narrow range, outside the scanner:
 
 ```
 python run_noscanner_onerange.py 01 1 narrow
 ```
 
+The number of trials in each of the three parts ('examples', with-feedback, without-feedback) is set in the settings yml file in `settings/`
+(look for `example: n_examples`, `feedback: n_examples`, `task: n_trials`).
