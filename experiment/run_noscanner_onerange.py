@@ -113,7 +113,7 @@ if __name__ == "__main__":
     argparser.add_argument('session', type=str, help='Session')
     #argparser.add_argument('start_run', type=int, help='Start run #')
     argparser.add_argument('range', choices=['narrow', 'wide'], help='Range (narrow or wide)')
-    argparser.add_argument('--settings', type=str, help='Settings label', default='apc')
+    argparser.add_argument('--settings', type=str, help='Settings label', default='noscanner')
     #argparser.add_argument('--n_runs_per_range', type=int, default=4, help='Number of runs per range') 
     argparser.add_argument('--no_examples', action='store_false', help='Do not run examples block')
     argparser.add_argument('--no_feedback', action='store_false', help='Do not run feedback block')

@@ -44,7 +44,7 @@ class ExampleSession(EstimationSession):
         """Create trials."""
         instruction_trial2 = InstructionTrial(self, 0, self.instructions['intro_block'].format(range_low=self.settings['range'][0],
                                                                                                range_high=self.settings['range'][1]))
-        instruction_trial3 = InstructionTrial(self, 0, self.instructions['intro_part1'])
+        instruction_trial3 = InstructionTrial(self, 0, self.instructions['intro_part1'].format(nb_examples=self.settings['examples']['n_examples']))
 
         self.trials = [instruction_trial2, instruction_trial3]
 

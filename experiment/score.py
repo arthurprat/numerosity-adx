@@ -120,7 +120,7 @@ class ScoreTrial(InstructionTrial):
         self.mean_error = self.error.mean()
         self.mean_abs_error = self.error.abs().mean()
 
-        self.text.text = f'Thank you! On average your estimates were off by {self.mean_abs_error:.2f}\n\n'
+        self.text.text = f'Thank you! On average your estimates were off by {self.mean_abs_error:.2f}.\n\n'
 
         max_reward = self.session.settings['score']['max_reward']
         reward_slope = self.session.settings['score']['reward_slope']
